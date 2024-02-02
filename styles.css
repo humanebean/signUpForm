@@ -1,22 +1,37 @@
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
 :root{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #myImages{
     position: relative;
 }
 #logo{
     position: absolute;
-    max-height: 10vw;
+    max-height: 7vw;
     margin: auto;
-    top: 16.5vh;
-    left: 3vw;
+    top: 16vh;
+    left: 6vw;
+}
+#logoText{
+    position: absolute;
+    max-height: 5vw;
+    margin: auto;
+    top: 16.25vh;
+    left: 12vw;
+    font-family: Norse;
+    font-size: 10.5vh;
+    color: white;
 }
 #blackBar{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.51);
     min-width: 30vw;
-    min-height: 20vh;
+    min-height: 14vh;
     margin: auto;
     top: 15vh;
 }
@@ -53,6 +68,8 @@ body{
     background-color:rgb(109, 124, 64);
     color: white;
     font-size: medium;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 #entry1,#entry2,#entry3,#entry4,#entry5,#entry6{
     display: flex;

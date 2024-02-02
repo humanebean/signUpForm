@@ -15,21 +15,22 @@
         <img id=mountain src ="photo.jpg" alt="landscape image of a mountain, river and trees from Italy"></img>
         <div id="blackBar"></div>
         <img id="logo" src="logo.png" alt="stylized image of the norse god, odin"></img>
+        <span id="logoText">ODIN</span>
     </div>
         <div class="allOfIt">
             <div class="startingText">
                 <h2 class="topText">
                     <span>
                     This is not a real online service. You know you may need something like this in your life
-                    to help you realize your deepest dreams. Signup now to get started.
+                    to help you realize your deepest dreams. Sign up <em> now </em> get started.
                     </span>
                 </h2>
-                <h2 class="topText">You know you want to</h2>
+                <h2 class="topText">You <em>know</em> you want to</h2>
             </div>
             <div class="break"></div>
             <div class="myForm">
                 <form id="entries">
-                    <h2 style="margin-left: 3vw;">Lets do this</h2>
+                    <h2 style="margin-left: 3vw;">Lets do this!</h2>
                         <div id="sections">
                             <label for="Name" id="entry1">
                                 First Name:
@@ -48,26 +49,27 @@
                             </label>
                             <label for="Phone" id="entry4">
                                 Phone Number:
-                                <input type="number" name="userPhoneNumber">
+                                <input type="number" name="userPhoneNumber" id="userPhoneNumber" required/>
                             </label>
                         </div>
                         <div class="break"></div>
                         <div id="sections">
                             <label for="password" id="entry5">
                                 Password:
-                                <input type="password" name="userPassword">
+                                <input type="password" name="userPassword" required/>
                             </label>
                             <label for="password" id="entry6">
                                 Confirm Password:
                                 <input type="password" name="userConfirmPassword">
                             </label>
                         </div>
+                        <div class="bottom">
+                            <button id="myButton" type="submit">Create Account</button>
+                            <div>Already have an account? <a href="">Log in</a></div>
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div class="bottom">
-                <button id="myButton">Create Account</button>
-                <div>Already have an account? <a href="">Log in</a></div>
-            </div>
-        </div>
+            
 </body>
 </html>
