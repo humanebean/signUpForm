@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
-    <!--Photo by <a href="https://unsplash.com/@peter_mc_greats?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-        Pietro De Grandi</a> on <a href="https://unsplash.com/photos/white-mountain-near-body-of-water-Q5dMq3cKqec?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-            Unsplash</a>-->
-           
+    <script src="signUpForm.js" defer></script>
 </head>
 <body>
     <div id="myImages">
         <img id=mountain src ="photo.jpg" alt="landscape image of a mountain, river and trees from Italy"></img>
+        <div id="inBar">
         <div id="blackBar"></div>
         <img id="logo" src="logo.png" alt="stylized image of the norse god, odin"></img>
         <span id="logoText">ODIN</span>
+        <span id="credit">Photo by Pietro De Grandi on Unsplash</span>
+        </div>
     </div>
         <div class="allOfIt">
             <div class="startingText">
@@ -34,41 +34,44 @@
                         <div id="sections">
                             <label for="Name" id="entry1">
                                 First Name:
-                                <input type="text" name="userFirstName">
+                                <input type="text" name="userFirstName"/>
                             </label>
                             <label for="Name" id="entry2">
                                 Last Name:
-                                <input type="text" name="userLastName">
+                                <input type="text" name="userLastName"/>
                             </label>
                         </div>
                         <div class="break"></div>
                         <div id="sections">
                             <label for="email" id="entry3">
                                 Email:
-                                <input type="email" name="userEmail">
+                                <input type="email" name="userEmail"/>
                             </label>
                             <label for="Phone" id="entry4">
                                 Phone Number:
-                                <input type="number" name="userPhoneNumber" id="userPhoneNumber" required/>
+                                <input type="tel" name="userPhoneNumber" id="userPhoneNumber"/>
                             </label>
                         </div>
                         <div class="break"></div>
                         <div id="sections">
                             <label for="password" id="entry5">
                                 Password:
-                                <input type="password" name="userPassword" required/>
+                                <input type="password" name="userPassword" onchange="onChange()" required/>
+                                <span id="error"></span>
                             </label>
                             <label for="password" id="entry6">
                                 Confirm Password:
-                                <input type="password" name="userConfirmPassword">
+                                <input type="password" name="userConfirmPassword" onchange="onChange()" required/>
                             </label>
                         </div>
-                        <div class="bottom">
-                            <button id="myButton" type="submit">Create Account</button>
-                            <div>Already have an account? <a href="">Log in</a></div>
-                        </div>
+                       
+                    </div>
+                    <div class="bottom">
+                        <button id="myButton" type="submit">Create Account</button>
+                        <div>Already have an account? <a href="">Log in</a></div>
                     </div>
                 </form>
+                
             </div>
             
 </body>
